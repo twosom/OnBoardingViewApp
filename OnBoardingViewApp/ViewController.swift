@@ -11,11 +11,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    override
+    func viewDidLoad() {
+        super.viewDidLoad()
+
     }
 
+    override
+    func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
+        let pageVC: OnBoardingPageViewController = OnBoardingPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
 
+        pageVC.modalPresentationStyle = .fullScreen
+        present(pageVC, animated: true)
+    }
 }

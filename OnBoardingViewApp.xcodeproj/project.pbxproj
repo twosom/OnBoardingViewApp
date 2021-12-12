@@ -13,6 +13,9 @@
 		30F535815B9F74223659F1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F53C1ED5BB106753E98900 /* Assets.xcassets */; };
 		30F537B19F5E6A8588D5F0C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F531364FF29F110D84B8BD /* SceneDelegate.swift */; };
 		30F53D4A938F47D740D80CBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F53908D05F7AC62357E46C /* Main.storyboard */; };
+		F8A494A12765B3C100709B04 /* OnBoardingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4949F2765B3C100709B04 /* OnBoardingItemViewController.swift */; };
+		F8A494A22765B3C100709B04 /* OnBoardingItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A494A02765B3C100709B04 /* OnBoardingItemViewController.xib */; };
+		F8A494A42765B81000709B04 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A494A32765B81000709B04 /* OnBoardingPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		30F53A14782A71FBFC2DBC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30F53C1ED5BB106753E98900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F53EC6A9B45C7A20EA7322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8A4949F2765B3C100709B04 /* OnBoardingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingItemViewController.swift; sourceTree = "<group>"; };
+		F8A494A02765B3C100709B04 /* OnBoardingItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingItemViewController.xib; sourceTree = "<group>"; };
+		F8A494A32765B81000709B04 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				30F531364FF29F110D84B8BD /* SceneDelegate.swift */,
 				30F53EC6A9B45C7A20EA7322 /* ViewController.swift */,
 				30F53908D05F7AC62357E46C /* Main.storyboard */,
+				F8A4949F2765B3C100709B04 /* OnBoardingItemViewController.swift */,
+				F8A494A02765B3C100709B04 /* OnBoardingItemViewController.xib */,
+				F8A494A32765B81000709B04 /* OnBoardingPageViewController.swift */,
 			);
 			path = OnBoardingViewApp;
 			sourceTree = "<group>";
@@ -92,12 +101,21 @@
 /* Begin PBXProject section */
 		30F5348E7CB45B10B4D63662 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					30F530BB4B57A07ADC61A6E7 = {
+						DevelopmentTeam = YCY2X96LYD;
+					};
+				};
+			};
 			buildConfigurationList = 30F5384F80790E804964D035 /* Build configuration list for PBXProject "OnBoardingViewApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 30F53158FDC5AFB0E0660757;
 			productRefGroup = 30F53404EF8E36C1D91DA77B /* Products */;
@@ -114,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A494A22765B3C100709B04 /* OnBoardingItemViewController.xib in Resources */,
 				30F535815B9F74223659F1E5 /* Assets.xcassets in Resources */,
 				30F53558D6EE3A45120827D0 /* LaunchScreen.storyboard in Resources */,
 				30F53D4A938F47D740D80CBB /* Main.storyboard in Resources */,
@@ -129,6 +148,8 @@
 			files = (
 				30F532026E4ACAD0637938B1 /* AppDelegate.swift in Sources */,
 				30F537B19F5E6A8588D5F0C2 /* SceneDelegate.swift in Sources */,
+				F8A494A42765B81000709B04 /* OnBoardingPageViewController.swift in Sources */,
+				F8A494A12765B3C100709B04 /* OnBoardingItemViewController.swift in Sources */,
 				30F5306248C6C455F02CC6B4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,8 +225,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -216,6 +236,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY2X96LYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnBoardingViewApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -225,7 +246,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.OnBoardingViewApp;
+				PRODUCT_BUNDLE_IDENTIFIER = lab.gravy.OnBoardingViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -239,6 +260,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY2X96LYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OnBoardingViewApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -248,7 +270,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.OnBoardingViewApp;
+				PRODUCT_BUNDLE_IDENTIFIER = lab.gravy.OnBoardingViewApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +349,7 @@
 				30F5351D1964DEE52B48DF64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30F5384F80790E804964D035 /* Build configuration list for PBXProject "OnBoardingViewApp" */ = {
 			isa = XCConfigurationList;
